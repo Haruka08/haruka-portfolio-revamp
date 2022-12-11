@@ -31,16 +31,16 @@ export default function Navigation() {
         {/* <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} /> */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
-                    <a onClick={() => handlePageChange('Home')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                    <a onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                     >About me</a>
 
-                    <a onClick={() => handlePageChange('Home')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+                    <a onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
                     >Project</a>
 
-                    <a onClick={() => handlePageChange('Home')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                    <a onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                     >Contact</a>
 
-                    <a onClick={() => handlePageChange('Home')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                    <a onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                     >Resume</a>           
                 </div>
             </div>

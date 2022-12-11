@@ -18,3 +18,16 @@ export default function Project() {
     </Card>
   );
 }
+
+// group project 2
+// live URL
+// https://guarded-lowlands-27414.herokuapp.com/
+// GitHub
+// https://github.com/Beanalini/vibratingParticles
+
+
+// group project 2
+// live URL
+// https://dashboard.heroku.com/apps/boiling-dusk-63403
+// GitHub
+// https://github.com/capg84/trigger
