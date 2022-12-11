@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import About from './About';
 import Resume from './Resume';
 import Contact from './Contact';
-import Project from './Project';
+import Project from '../page/Project';
 
 // A single Header component that appears on multiple pages
 export default function Header() {
