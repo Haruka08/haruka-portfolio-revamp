@@ -1,13 +1,11 @@
 import React from "react";
 
-// A single Project component that will be used multiple times in the Portfolio section
+// A single Footer component that appears on multiple pages
 export default function Project() {
     return (
-      <div className="card text-center">
-        <div className="card-header">
-            <i className="bi bi-linkedin">hello</i>
-            <i className="bi bi-linkedin">hello</i>
-        </div>
+      <div>
+        <img src="..." class="rounded float-start" alt="..."/>
+        <img src="..." class="rounded float-end" alt="..."/>
       </div>
     );
   }
