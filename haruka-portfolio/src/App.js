@@ -2,14 +2,14 @@
 // import './App.css';
 import React from 'react';
 import Header from "./component/Header"
-import Project from "./page/Project"
+import PortfolioContainer from "./page/PortfolioContainer"
 import Footer from "./component/Footer"
 
 export default function App() {
   return (
     <div>
       <Header />
-        <Project />
+        <PortfolioContainer />
       <Footer />
     </div>
   );
