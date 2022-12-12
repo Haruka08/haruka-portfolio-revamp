@@ -1,0 +1,17 @@
+.custom-btn {
+    color:rgb(242, 233, 228);
+    background-color:rgb(74,78,105);
+    border: none;
+    margin: 2px;
+}
+
+.custom-card {
+    color:rgb(34, 34, 59);
+    background-color: rgb(242, 233, 228);
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
