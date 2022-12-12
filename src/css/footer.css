@@ -1,0 +1,15 @@
+.custom-footer{
+    background-color: rgb(74,78,105);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.link{
+    margin: 10px;
+}
+
+.bi{
+    color: rgb(242, 233, 228);
+}
