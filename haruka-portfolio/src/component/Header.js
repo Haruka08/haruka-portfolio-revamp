@@ -9,6 +9,7 @@ import Project from './Project';
 export default function Header() {
   return (
     <div>
+      <header>Haruka's Portfolio</header>
       <Navigation />
     </div>
   );

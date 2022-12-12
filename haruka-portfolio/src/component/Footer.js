@@ -3,7 +3,7 @@ import React from "react";
 // A single Footer component that appears on multiple pages
 export default function Footer() {
     return (
-      <nav className="navbar fixed-bottom bg-light">
+      <footer className="navbar fixed-bottom bg-light">
         <div className="container-fluid">
           <a href="https://uk.linkedin.com/in/haruka-h-587b41100">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -16,6 +16,6 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-      </nav>
+      </footer>
     );
   }

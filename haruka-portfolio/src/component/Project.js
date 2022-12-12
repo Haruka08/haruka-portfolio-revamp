@@ -1,33 +1,40 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import trigger from "../images/trigger.png";
+import bleedForMe from "../images/bleedForMe.png";
+
+
 
 // A single Footer component that appears on multiple pages
 export default function Project() {
     return (
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
+      <div>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="./images/bleedForMe.png" alt="Bleed for me"/>
+          <Card.Body>
+            <Card.Title>Bleed For Me</Card.Title>
+            <Card.Text>
+              A website where users can register to donate blood. 
+            </Card.Text>
+            <Button variant="primary" href="https://guarded-lowlands-27414.herokuapp.com/">Bleed for me website</Button>
+            <Button variant="primary" href="https://github.com/Beanalini/vibratingParticles">Bleed for me GitHub</Button>
+          </Card.Body>
+        </Card>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="./images/bleedForMe.png" alt="Trigger"/>
+          <Card.Body>
+            <Card.Title>Trigger</Card.Title>
+            <Card.Text>
+              A website where animals in need can find a new home. 
+            </Card.Text>
+            <Button variant="primary" href="https://dashboard.heroku.com/apps/boiling-dusk-63403">Trigger website</Button>
+            <Button variant="primary" href="https://github.com/capg84/trigger">Trigger GitHub</Button>
+          </Card.Body>
+        </Card>
+
+      </div>
   );
 }
-
-// group project 2
-// live URL
-// https://guarded-lowlands-27414.herokuapp.com/
-// GitHub
-// https://github.com/Beanalini/vibratingParticles
-
-
-// group project 2
-// live URL
-// https://dashboard.heroku.com/apps/boiling-dusk-63403
-// GitHub
-// https://github.com/capg84/trigger

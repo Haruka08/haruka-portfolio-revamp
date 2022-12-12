@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import About from '../component/About';
 import Contact from '../component/Contact';
 import Project from '../component/Project';
@@ -29,21 +34,34 @@ export default function Navigation() {
       <div>
         {/* We are passing the currentPage from state and the function to update it */}
         {/* <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} /> */}
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
-                    <a onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                    >About me</a>
+        {/* <nav className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+                <a onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                >About me</a>
 
-                    <a onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
-                    >Project</a>
+                <a onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+                >Project</a>
 
-                    <a onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                    >Contact</a>
+                <a onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                >Contact</a>
 
-                    <a onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-                    >Resume</a>           
-                </div>
+                <a onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                >Resume</a>           
             </div>
+        </nav> */}
+
+        <Navbar bg="light" variant="light">
+            <Container>
+            {/* <Navbar.Brand href="#home">Menu</Navbar.Brand> */}
+            <Nav className="me-auto">
+                <Nav.Link href="#about" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About me</Nav.Link>
+                <Nav.Link href="#project" onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}>Project</Nav.Link>
+                <Nav.Link href="#contact" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
+                <Nav.Link href="#resume" onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
+            </Nav>
+            </Container>
+        </Navbar>
+
         {/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}
       </div>
