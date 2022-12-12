@@ -12,7 +12,7 @@ export default function Project() {
       <div>
 
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="./images/bleedForMe.png" alt="Bleed for me"/>
+          <Card.Img variant="top" src={require('../images/bleedForMe.png')} alt="Bleed for me"/>
           <Card.Body>
             <Card.Title>Bleed For Me</Card.Title>
             <Card.Text>
@@ -24,7 +24,7 @@ export default function Project() {
         </Card>
 
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="./images/bleedForMe.png" alt="Trigger"/>
+          <Card.Img variant="top" src={require("../images/trigger.png")} alt="Trigger"/>
           <Card.Body>
             <Card.Title>Trigger</Card.Title>
             <Card.Text>
