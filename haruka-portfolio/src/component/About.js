@@ -1,8 +1,20 @@
 import React from 'react';
 
+const styles = {
+    imgStyle: {
+      width: 370,
+      height: 500,
+    },
+    paragraphStyle: {
+      color: 'black',
+      padding: 10,
+    },
+  };
+
 export default function About() {
   return (
         <div>
+            <img style={styles.imgStyle} src={require("../images/haruka-photo.jpg")} alt="Haruka"></img>
             <p>
                 Hi! Welcome to my portfolio, my name is Haruka.
                 I'm from Japan but spend over 20 years in the UK studying and working in automotive industry.
