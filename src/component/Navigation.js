@@ -9,6 +9,8 @@ import Contact from '../component/Contact';
 import Project from '../component/Project';
 import Resume from '../component/Resume';
 
+import '../css/navigation.css'
+
 // A single Navigation component within the header that will be used to conditionally render the different sections of your portfolio
 
 export default function Navigation() {
@@ -50,7 +52,7 @@ export default function Navigation() {
             </div>
         </nav> */}
 
-        <Navbar bg="light" variant="light">
+        <Navbar variant="light" className="custom-nav">
             <Container>
             {/* <Navbar.Brand href="#home">Menu</Navbar.Brand> */}
             <Nav className="me-auto">
