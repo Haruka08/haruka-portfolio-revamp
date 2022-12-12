@@ -2,6 +2,8 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+import '../css/contact.css'
+
 export default function Contact() {
   return (
     // <div>
@@ -23,7 +25,7 @@ export default function Contact() {
     //     </form>
     // </div>
 
-    <Form>
+    <Form className="custom-contact">
     <Form.Group className="mb-3" controlId="formBasicEmail">
       <Form.Label>Name</Form.Label>
       <Form.Control type="text" placeholder="Enter your name" />

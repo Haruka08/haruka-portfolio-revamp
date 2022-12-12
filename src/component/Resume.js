@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 export default function Resume() {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion defaultActiveKey="0" >
     <Accordion.Item eventKey="0">
       <Accordion.Header>Professional Profile</Accordion.Header>
       <Accordion.Body>
